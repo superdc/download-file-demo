@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>download</h2>
+  <h3>无 download 属性</h3>
+  <a href="/image">无 download 属性</a>
+  <h3>同域</h3>
+  <a href="/image" download>同域</a><br>
+  <a href="/image" download="w3school.jpg">同域设置文件名</a>
+  <h3>跨域</h3>
+  <a href="https://www.w3schools.com/images/myw3schoolsimage.jpg" download>跨域</a>
+  <h3>blob</h3>
+  <button id="blob">blob download</button>
+  <h3>data:url</h3>
+  <a download="data:url 下载" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAYAAAB5fY51AAAYG0lEQVR4Xu2dy49cx3WHT/EhMiITy5IhUqQJxMssrERJjDx2DiDAwPR4mUUUJwuB1PQoXnhvAwK8TzbKXIqOFkGY/AGZHiCJF17GAQgLpv6ACBCHGiYWSCsSRZqcqaB7eqzhY6Zv9/3VrdfHHTG3Tp36zulf961TD2f8gwAEIJAJAZeJn7gJAQhAwBAskgACEMiGAIKVTahwFAIQQLDIAQhAIBsCCFY2ocJRCEAAwSIHIACBbAggWNmECkchAAEEixyAAASyIYBgZRMqHIUABBAscgACEMiGAIKVTahwFAIQQLDIAQhAIBsCCFY2ocJRCEAAwSIHIACBbAggWNmECkchAAEEixyAAASyIYBgZRMqHIUABBAscgACEMiGAIKVTahwFAIQQLDIAQhAIBsCCFY2ocJRCEAAwSIHIACBbAggWNmECkchAAEEixyAAASyIYBgZRMqHIUABBAscgACEMiGAIKVTahwFAIQQLDIAQhAIBsCCFY2ocJRCEAAwSIHIACBbAggWNmECkchAAEEixyAAASyIYBgZRMqHIUABBAscgACEMiGAIKVTahwFAIQQLDIAQhAIBsCCFY2ocJRCEAAwSIHIACBbAggWNmECkchAAEEixyAAASyIYBgZRMqHIUABBAscgACEMiGAIKVTahwFAIQQLDIAQhAIBsCCFY2ocJRCEAAwSIHIACBbAggWNmECkchAAEEixyAAASyIYBgZRMqHIUABBAscgACEMiGAIKVTahwFAIQQLDIAQhAIBsCCFY2ocJRCEAAwSIHIACBbAggWNmECkchAAEEixyAAASyIYBgZRMqHIUABBAscgACEMiGAIKVTahwFAIQQLDIAQhAIBsCCFY2ocJRCEAAwSIHIACBbAggWNmECkchAAEEixyAAASyIYBgZRMqHIUABBAscgACEMiGAIKVTahwFAIQQLDIAQhAIBsCCFY2ocJRCEAAwSIHIACBbAggWNmECkchAAEEixyAAASyIYBgZRMqHIUABBAscgACEMiGAIK1L1T+rZ8cs627r5uzJTP/+2Z2fvrnTTP3M/O2YWeffde99c2H2UQYRyFQEAEEaxpMv7J+0cz90JydOTS+3m6Zc993zdI/FJQHDAUCWRBAsMzMD9ffNnNvzhUxZ2+7tcF352rDwxCAQCcC1QvWQmK1hxzR6pR8NIbAvASqFiy/un7RvLsyL7RHn3cXeT3sRpDWEGhLoFrB8peuHbdjWx+anzFnNYvkeE5rZ/OCu/LGg1mP8ncIQKAbgXoFa7i+YuaabvimrZ1bcWtL70hsYQQCEDiQQM2CtW7mBprc8CPXLC9rbGEFAhA4iEDFgjW6sW+dVdcM2XTN4KtdjdAeAhA4nEDNguWVyeGaQbUslRxD23pkcbDzr5ifLg52tmnevcfi4NAR6Ga/2g+ZH44QrG65k13r1ouDzbbM3A+o/qYX4poFi1fC9PIxmEcLrbdjnV2weCxquF7BWh1dN29fXxTcI+2cve/WBi9LbGFETmAhsdrzAtGSx6OLwXoFa2V03ZxIsLy97y4jWF0SMVRbFgeHIhvHbr2CNVwfn8BwToPd33TN8t7JDhqTWOlMgMXBnREmZ6BiwWLSPblsFDvkWRwsJhrfHIIligHLGkQghWb8cJ3FwUKeKZiqWbBum9lzoiDccc3gyyJbmBER8EMWB4tQJmOmXsFaHW113vj8RSXpllsbnE0mqjgyIcBau/ISoWbBum2eX1jlpfQXI0KwyotuvYLFSvfysvmxEfnh6HMzOyka6D3XDH5DZAszCxJAsBYE93gzJt1FIIVmECwhzERM1SxYTLonkoSh3OCVMBTZeHbrFSwm3eNlXU89I1g9ge6xm3oFazjiF1aPiRajKy/dzWCceRYjiI/1WbNgcbxMAgkY0gXPBveQeKPYRrBE2Jl0F4EUmvFscBfSTMNUzYIlPA/L79iZ0ye4wj6NpN7zwg9Hm2bGBve0wtLJm4oFS7nPzMy4OadTIoZozKR7CKpxbVYsWBsrZl5zzdckhm7dNUvfjhtOet9PAMEqLx/qFazxRapHP7pn5o6IwkoVSQRSZYbNzyqS6dipVrDGIeAbOJ1EDOEJVcIQVOPaRLCE/KkUCmEKTFElFEBMzETlgqU8JpmFhYnltmkXjnIMdgrxrVuwWFiYQg4G84FX/mBooxmuW7BYWBgt8froGMHqg3K/fdQtWCws7Dfbeu6NKmHPwHvornbBYj9hD0kWqwsuoYhFPly/CJaQLVVCIUyBKT/ceNPMvy0wNV4E8zeuWf57jS2sLEqgdsES7iekSrhoEoZqJxUsZ2+6tcFaKF+x245A3YJFlbBdlmT6lPaVkK1XKaRB3YJFlTCFHAzmA5PuwdBGM1y3YElPpGRhYbQsPqBjljWkFpHu/lQuWCOqhN1zKFkLCFayoVnYMQRrYXRPNqRKKIQpMMUroQBiYiZqFyyqhIklpNId7aS7H7lmeVnpH7bmJ1C3YK2ORuZtaX5sT2nhbMOtDQYSWxiREPCro6vm7TWJMfND1yxf1tjCyqIE6has4cY/m/m/WBTeo+38v7hmWfTh0HhUsxV/6Z3jdvTcDTP3YmcOzm7Zw7MX3JU/fNDZFgY6EahcsEYjM9EvLLMN1/ALq1M2Chv74fqKmdMcge3sqlsbfEfoHqYWJFC7YDGHtWDipN5MO3/FotFU4l27YLGsIZVMFPtBhVAMNBFzCJYwECxrEMLsaIo1WB0BJtq8csHiiORE87KzWwhWZ4RJGqhbsNj8nGRSKpzilVBBMT0bdQsWm5/Ty0iRR9pJdxaNisLS2UzdgsURyZ0TKFUDLBpNNTLd/KpdsKgSdsufJFuzaDTJsEicQrAkGHeNUCUUwuxgikWjHeAl3rR2wWLhaOIJuoh72vkrFo0uEoNQbeoWLKqEofIqql0qhFHxB+28bsGiShg0uWIZZw1WLPLh+61bsDgiOXyGRegBwYoAvacuKxcsjkjuKc967YZXwl5x99oZgiXETZVQCLODKe2kO4tGO4RC3rR2waJKKE8pvUH/1k+O2UefXTKzVTtiv2NmR57Sy0Nz/j178fSf2a27f2nmNWdhcdKoPqAdLNYtWFQJO6SOrulEkLbuvm7Olsz5V8zb+an1+2Z21MyOz9eb+y8z/40DhG0eUzt28vnT7u/+9PN5GvFsOAJ1CxZVwnCZ1dKyX1m/aOZ+aM7OtGzS72POrbi1pXf67ZTeDiJQt2BRJez1kzHdMvP67rHU7hWzX/+S6tWP+Tpj4eh8vMI+XblgUSXcn14Hvpo52zTv3jNvG3b22X+0rbt//cTr294zO/7fJi9x3n3LnL1i3u+93t0xs2fN7ETYlJZb33TN4KtyqxhciACCtRC2pzfKoUp4yHxRS0HxO2buaZPeQpJpmcohrmkRC+dNtYLlL107bkc/uif88EX/Jp75C8n8L83Zq+YTnS8Kl+edLCNYnfBJG9crWMproCYhibteJ/nJa2na9mos+hdRr6NNvLOaBWvdzAlvau7nZuADfkVVG8fwn6+4X0Thx5dXD9Umunb7ht+x7ZdOdr0ZmFe6FD88/XwRpTjyFH2qWbCinDbafdI7xTQq1CeuqE8usAiWLiSb+9YV3TFv9835E2buuWkX47//wsy+Zma/pesWS8EIcEV9MLSLGq5ZsJT7CBflT7ukCTB/lVp46hUs5T7C1KKKPyoCVAhVJEV26hUs5T5CUTAwkx4B1mClFZN6BUu6jzCtoOKNjgCCpWOpsFSxYGn3ESqCgY3kCPBKmFhIqhSs3VMDzv8qsVjgTnIEmHRPLSR1CpZ8W05qYcUfDQEWjWo46qzUKljibTm6gGBpUQLjUySObJv5OU8nPaC/yaLRzQvuyhsPFvWIdnoClQrWiDVY+lwKYNHd2zXqT06Nb0+PTDZzdtO8+5mZbdj2mXft6EevmznROe7jLv0ld3n5RwEGhckOBGoVLOm2nA78afoEAf8/5uz7bm0+sdDelGMfuGYw3pHAv8QIIFiJBSQDd3YElzvcN2efm7e9bUs3zb74tbTIJnLtZnajOphoIlYnWAEO7ks0tJ3cOlhQPj32T3bqwV9Njkg2G5/Lfm7a067o+J1/n/zfuW899e/TV7hFROmwEXHbc6d4Z9O4PsGqvkLo/9ec+4/pr5snBSeQoIT+RCBYoQmnYb9GwaqxQtj5lSuNdD3YC14JU4+Qxr8KBauCCuG4JG/+B/NOXGtSKo4VPxz9t5n9tqZ3FoxqOOqt1ChYmVcIJ1W0H5u3Lz12t9+mmX9vt8z/0rvqOSJ96uks+tX1i+bdFaHFoWuWL+vsYUlFAMFSkdTaGV/RPr4efd/hf3WK0SyskyLKsa0PZTcBccroLORR/16VYCVTIXTuE/P2gZl/Yd8ppdX+QuryCfDqIorzl2p6le7CPkbbugRLndwHR+yOObtvfnLLMb+SAmY2C0YDwk3QdG2CFaJCyC+jiIlNdTAi/AhdVyZYygrh+GqvmyfZHBsha/d1yfqruPz77r02wZJWCDmNsu90fbI/BCt+DPr0oBrB0pe+x2cDDKrh12dSztMXr4Tz0Mr/2So+cJMTRo+d15W+d+POBtkE8t8P139u5l7WuMKCUQ3HcFbqEKwg1UGSO1xatrM8Pep6fDmt6GJaThhtRz7eU7UIVoDqIMkdL213e5auwXL2iT3c/ApFlNhRPbz/SgRLWR0cH53C8bkppLV2DZa/7prl301hXPhwMIFaBEtaHeT43DQ+Uky4pxGHPr1AsBagTXVwAWgBmrCkIQDUxE0WL1gB9g9SHUwkqRGsRALRoxvlC5a8Qkh1sMf8PLQrPxx9amanRP7wRSQCGdJMBYKlPNhttzbFWUkhU7Kdbf1CYL6I2pGP+1TRghUgqXds+6WTNR2OFzc9n9779DX/hpl7UecfX0Q6luEsFStY8oPdpjFgwj1cMra17IcbK2Zed2kqh/a1RR/9uXIFSz53tRsrBCt6zpofbqyb+YHMEw7tk6EMbahkwQqwup39g6ETso19Pxxt7rsPsU2Tw575zDWD012N0L4fAgULlnh1+yQeTMz2k5aH98JyhhSiEMeHkgVLu7p9V7CoEMbJ00d6RbASCEIkFxCstuDZP9iWVPDnxK+ErL8KHjFdB0UK1u6xI+fumbkjMlTeX3KXl38ks4ehhQn44WhkZksLG3j099rINcvLGltYCU2gTMHSVwg/cM3ga6GDgf12BPzq6Kp5e63d07Oe4jV/FqGU/l6qYIkrhCR1KkkrXTTKa34qYW3tR6GCpawQcjtO62zq4UHxotGrrhl8pwe36UJEoFTBklYIWSwqyjaBGe2iUbfumqVvC9zCRE8EihMs/f5BVrf3lIutuqFC2ApTsQ8VJVjcjlNsnv56YOI1WN41A10luXz80UdYlmDpq4Osbo+eoo86gGAlFpCe3SlNsMTVwXE0qBD2nJOHdic9tM/ZDbc2uJDS+PDlcAKFCZayOrh3O87ZC5x/lcbHSD8/yd7QNCLb3ovSBEtaHTSOHWmfSYGflK6/2jcjxumxgQMnNl+MYOm/fakOinOtkznx+qvp3ZL8eu4UlAiNixCsQKeLsik2QkIe1KV2/dV4apK9oQmFt7UrZQgW1cHWAc/1QfH6q09dM/jNXFnU7HcpgkV1sPAsZjlD4QFuObxCBIvqYMt4Z/sYgpVt6KSOlyJYVAelaZGeMekrIeuv0gtwS4+yF6zdw/rO/6rleFs9xmbnVph6fcivjK6bs69rOmXTs4Zj/1byFyz9hDvVwf7z8NAep19KH5uZZqLcuxV3eemdxIaJOy0IlCBY4gl3Vj+3yJteH/HaL6VP7MypF9xb33zY6yDoTEKgAMEST7izd1CSWEojfriu/FL6uWsGv6f0D1v9EShBsLQT7tubz7grbzzoLwT0NIsAE+6zCNXzdwTrsVgz4Z5e8rOkIb2YxPIoa8GabohVXufFhHusTDykXwQrwaBEcilvwdJOxnJYX6QkPKxb+ZcSa7ASjHJ7l3IXLOVkLIf1tc+b3p4UVwjHh5xx8URv0dN3lLlgjT41s1MaLOPrvF46yWF9GpoqK+IKoZlzK26NNViq+PRtJ1vB4vyrvlMlTn9+qFy2wh2TcaKo6zVLwQp0/pVRIdQllsqSdsLdedcscUuOKjgR7OQpWPLJ9gl5KoQREnBWl1rBMq71mgU88b/nKljiyfZxlNiSk2Ku+uHotpk9J/GNCqEEY0wjmQqWcl5jDz/XecVMxKf1vbukYev/zOyExjcqhBqO8azkKlja7TjObtnDzQtsyYmXiE8VLPWrP6c0pBXgBbzJTrBCVAe5kGCBzOmhiXhJw307c+o0pzT0ELiAXWQlWJNzkY6d/9C8nREy+cw1g9NCe5gSEdAuabDbrhk8L3INM5EI5CVY6leECXQm2yPl3sxuxRVClq3MJJ7+A7kJVojq4JDbf9NMVAQrzbjE9Co3wbpt5jQl7jF1Jttj5t6hfe8ei3yOkziSjVAcx7IRrBCXTTDZHifp2vTKpuc2lOp7Jh/BCjB/xVacdBNeXCFk03O6oZ7Ls5wESz1/xVacuVKl34e1FUK/Y2dOn2BJQ78xDNFbRoIl3KJBdTBELkltMuEuxVmMsSwEa7pFQ3pZqnE7TtJJjGAlHZ5ozuUhWAHmr2z77DMc1hct72Z27Ifrm2bu3MwH2z3A6387Tsk/lYtgqeev7rhm8OXko1Oxg351dN286Gp6Z++7tcHLFeMsZuiZCJb6dAZWt6eewX5ldN2cSLC8ve8uI1ipx7yNf7kIlvZ0Buav2uRG1Gekl6eav+ma5fNRB0TnEgJ1ChbzV5LkCWmESfeQdPO1nYtgKW/HueOaZeavEs9ZBCvxAEVyL3nB0p9/xfxVpFxr3e10Gcv9yW5PzT+qhBqO0a2oEiLIQKaJe8fMntV1wFHIOpZhLPnV9avm3Ws663xJ6VjGtZS2YKkTl9MZ4mZbi97157iPO+VLqgX6LB5JVrAmpzMcOX/fnOy1wDidIf2c1J/SwOWp6Ue9vYfpCtbKv37P3JG/bT+UmU9yFPJMRPEfkC4YnQ6HUznix1XlQbqCpbyPjsRV5UtQO0F+VY9n7ptBsnkeFGiBxpMNpB+OdoRVoknoSNy0M9gP1980c2+LvaRCKAYa01zKgiVe3c5V9DETrU3fIV4HuWSkDfl8nqlIsChtp56Wfjj63MxOav2kQqjlGddaTYLF7Thxc21m7+rV7ZMOtzef4UbvmeizeaAewSJxk0/KAIJ11zWDU8kPHAdbE0hXsFZHD8zbsdYjOfRBv+Oa5aMaW1gJRSCAYG24ZjAI5S92+yeQrmANR9fM7A8kSJxdc2uDb0hsYSQYAb1gMX8VLFiRDKcrWJeufcmObo33EXb/t333OXflz3/Z3RAWQhKQCxbHCIUMVxTbyQrWmIYfjn5qZn/UjYz/qWuW/6SbDVr3QUAtWKy76yNq/faRtGBNRGtl9LE5e35BLB+7ZvCVBdvSrGcCCFbPwDPsLnnBmv7S+oWZvTAnX8RqTmCxH0ewYkcg/f6zEKxd0dr4TzP/x+2Q8hrYjlNaT3lpZdgeumZwPK0R4k1XAtkI1kS0JhPxt35s5sdXNp14bPD3zdx12/7sVSbYu6ZFnPaeynAc8Bn1mpVgZcQVVxcgsPuFRGV4AXTVNEGwqgl1HgOlMpxHnGJ5iWDFIk+/BxKgMkxyHEQAwSI3kiSwoGhRGU4ymjqnECwdSyyJCcz3ekhlWIw/SXMIVpJhwak9Au0qwzdedVfeYOtVBWmDYFUQZIYIgVIIIFilRJJxQKACAghWBUFmiBAohQCCVUokGQcEKiCAYFUQZIYIgVIIIFilRJJxQKACAghWBUFmiBAohQCCVUokGQcEKiCAYFUQZIYIgVIIIFilRJJxQKACAghWBUFmiBAohQCCVUokGQcEKiCAYFUQZIYIgVIIIFilRJJxQKACAghWBUFmiBAohQCCVUokGQcEKiCAYFUQZIYIgVIIIFilRJJxQKACAghWBUFmiBAohQCCVUokGQcEKiCAYFUQZIYIgVIIIFilRJJxQKACAghWBUFmiBAohQCCVUokGQcEKiCAYFUQZIYIgVIIIFilRJJxQKACAghWBUFmiBAohQCCVUokGQcEKiCAYFUQZIYIgVIIIFilRJJxQKACAghWBUFmiBAohQCCVUokGQcEKiCAYFUQZIYIgVIIIFilRJJxQKACAghWBUFmiBAohQCCVUokGQcEKiDw//4yf6X0K+tsAAAAAElFTkSuQmCC">data:url download</a>
+  
+  <h2>Content-Disposition</h2>
+  <h3>inline</h3>
+  <img src="/inline-image"> inline<br>
+  <img src="/inline-image-with-name"> inline with filename
+  <h3>attachment</h3>
+  <a href="/download">filename：非 ASCII 字符</a><br>
+  <a href="/download2">filename：带 / 或 \ 路径分隔符</a><br>
+
+  <h3>form 下载</h3>
+  <button id="form">form download</button>
+
+  <h3>ajax 下载</h3>
+  <button id="ajax">ajax download</button>
+  <script>
+    function formDownload(url){
+      let form = document.createElement('form');
+      form.method = 'get';
+      form.action = url;
+      // form.target = '_blank';	// form新开页面
+      document.body.appendChild(form); // form表单做出提交操作要先加入到dom树中
+      form.submit();
+      document.body.removeChild(form);
+    }
+  </script>
+  <script>
+    function request(url){
+      const xhr = new XMLHttpRequest();
+      xhr.open('GET', url);
+      xhr.responseType = 'blob';
+      xhr.onload = function(){
+        console.log(xhr.response)
+        saveAs(xhr.response, 'blob.jpg');
+      };
+      xhr.onerror = function(){
+        console.log('something is error');
+      };
+      xhr.send();
+    }
+    function saveAs(blob, name){
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = name;
+      a.click();
+      URL.revokeObjectURL(a.href);
+    }
+  </script>
+  <script>
+    const blobBtn = document.querySelector('#blob');
+    blobBtn.addEventListener('click', ()=>{
+      request('/blob');
+    });
+    const formBtn = document.querySelector('#form');
+    formBtn.addEventListener('click', ()=>{
+      formDownload('/form');
+    });
+    const ajaxBtn = document.querySelector('#ajax');
+    ajaxBtn.addEventListener('click', ()=>{
+      const xhr = new XMLHttpRequest();
+      xhr.open('GET', '/form');
+      xhr.responseType = 'application/octet-stream';
+      xhr.onload = function(){
+        console.log('onload');
+      };
+      xhr.onerror = function(){
+        console.log('something is error');
+      };
+      xhr.send();
+    });
+  </script>
+</body>
+</html>
